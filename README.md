@@ -2,7 +2,7 @@
     基于国内的“个推”封装而成，方便Yii2框架使用。
     
 ### 安装
-    composer require houpanqi/yii2-igetui-push
+    composer require houpanqi/yii2-igetui-push "*"
     
 ### 配置
     在main.php中配置
