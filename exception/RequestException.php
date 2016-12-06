@@ -1,5 +1,5 @@
 <?php
-namespace hpq\pusher\gettui\exception;
+namespace common\components\pusher\igetui\exception;
 /**
  * Class RequestException
  * @property $requestId
@@ -13,6 +13,7 @@ class RequestException extends \Exception
         parent::__construct($message, $e);
         $this->requestId = $requestId;
     }
+
     public function getRequestId()
     {
         return $this->requestId;

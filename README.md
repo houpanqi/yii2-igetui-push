@@ -7,7 +7,7 @@
 ### 配置
     在main.php中配置
 
-    'class' => 'hpq\pusher\Push',
+    'class' => 'common\components\pusher\Push',
     'appId' => '', //你的APPID
     'appKey' => '', //你的APPKEY
     'masterSecret' => '', //你的masterSecret

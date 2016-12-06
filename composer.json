@@ -3,10 +3,6 @@
   "description": "base on iGeTui",
   "type": "library",
   "license": "BSD-3-Clause",
-  "minimum-stability": "dev",
-  "autoload": {
-    "psr-4": {
-      "hpq\\pusher\\": ""
-    }
-  }
+  "minimum-stability": "stable",
+  "require": {}
 }

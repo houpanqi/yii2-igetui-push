@@ -1,7 +1,15 @@
 <?php
 
-namespace hpq\pusher;
+namespace common\components\pusher;
 
+use common\components\pusher\igetui\DictionaryAlertMsg;
+use common\components\pusher\igetui\exception\RequestException;
+use common\components\pusher\igetui\IGtAPNPayload;
+use common\components\pusher\igetui\IGtAppMessage;
+use common\components\pusher\igetui\IGtSingleMessage;
+use common\components\pusher\igetui\IGtTarget;
+use common\components\pusher\igetui\template\IGtNotyPopLoadTemplate;
+use common\components\pusher\igetui\template\IGtTransmissionTemplate;
 use yii\base\Component;
 
 /**
@@ -69,8 +77,7 @@ class Push extends Component
      */
     public function useNotifyPopLoadTemplate($config = [])
     {
-
-        $this->template = new \IGtNotyPopLoadTemplate();
+        $this->template = new IGtNotyPopLoadTemplate();
         $this->template->set_appId($this->appId); //应用appid
         $this->template->set_appkey($this->appKey); //应用appkey //通知栏
         $this->template->set_notyTitle($config['title']); //通知栏标题
@@ -104,7 +111,7 @@ class Push extends Component
      */
     public function useTransmissionTemplate($config = [])
     {
-        $this->template = new \IGtTransmissionTemplate();
+        $this->template = new IGtTransmissionTemplate();
         $this->template->set_appId($this->appId);//应用appid
         $this->template->set_appkey($this->appKey);//应用appkey
         $this->template->set_transmissionType(1);//透传消息类型
@@ -112,8 +119,8 @@ class Push extends Component
         //$this->template->set_duration($config['showStartAt'], $config['showEndAt']);//设置ANDROID客户端在此时间区间内展示消息
 
         // APN高级推送
-        $apn = new \IGtAPNPayload();
-        $alertMsg = new \DictionaryAlertMsg();
+        $apn = new IGtAPNPayload();
+        $alertMsg = new DictionaryAlertMsg();
         $alertMsg->body = "body";
         $alertMsg->actionLocKey = "ActionLockey";
         $alertMsg->locKey = "LocKey";
@@ -140,21 +147,21 @@ class Push extends Component
      */
     public function pushOne()
     {
-        $igt = new \IGeTui($this->host, $this->appKey, $this->masterSecret);
+        $igt = new IGeTui($this->host, $this->appKey, $this->masterSecret);
 
         //定义"SingleMessage"
-        $message = new \IGtSingleMessage();
+        $message = new IGtSingleMessage();
         $message->set_isOffline(true);//是否离线
         $message->set_offlineExpireTime(3600 * 12 * 1000);//离线时间
         $message->set_data($this->template);//设置推送消息类型
-        $target = new \IGtTarget();
+        $target = new IGtTarget();
         $target->set_appId($this->appId);
         $target->set_clientId($this->clientId);
 
         try {
             $response = $igt->pushMessageToSingle($message, $target);
 
-        } catch (\RequestException $e) {
+        } catch (RequestException $e) {
             $requestId = $e->getRequestId(); //失败时重发
             $response = $igt->pushMessageToSingle($message, $target, $requestId);
         }
@@ -168,9 +175,9 @@ class Push extends Component
      */
     public function pushAll()
     {
-        $igt = new \IGeTui($this->host, $this->appKey, $this->masterSecret);
+        $igt = new IGeTui($this->host, $this->appKey, $this->masterSecret);
         //基于应用消息体
-        $message = new \IGtAppMessage();
+        $message = new IGtAppMessage();
         $message->set_isOffline(true); //离线时间单位为毫秒，例，两个小时离线为3600*1000*2
         $message->set_offlineExpireTime(3600 * 12 * 1000);
         $message->set_data($this->template);
