@@ -8,7 +8,6 @@ use hpq\pusher\igetui\utils\GTConfig;
 use hpq\pusher\igetui\utils\HttpManager;
 use hpq\pusher\igetui\utils\LangUtils;
 
-
 /**
  * Class IGeTui
  * @property string $appkey
