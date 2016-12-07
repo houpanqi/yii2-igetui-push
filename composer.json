@@ -1,8 +1,19 @@
 {
   "name": "houpanqi/yii2-igetui-push",
-  "description": "base on iGeTui",
+  "description": "Based on iGeTui component",
   "type": "library",
   "license": "BSD-3-Clause",
-  "minimum-stability": "stable",
-  "require": {}
+  "authors": [
+    {
+      "name": "houpanqi",
+      "email": "houpanqi@qq.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "hpq\\pusher\\": ""
+    }
+  }
 }
