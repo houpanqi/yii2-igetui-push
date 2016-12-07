@@ -5,10 +5,10 @@
  * Date: 15-4-9
  * Time: 下午3:45
  */
-namespace common\components\pusher;
-use common\components\pusher\igetui\SingleBatchItem;
-use common\components\pusher\igetui\SingleBatchRequest;
-use common\components\pusher\igetui\utils\GTConfig;
+namespace hpq\pusher;
+use hpq\pusher\igetui\SingleBatchItem;
+use hpq\pusher\igetui\SingleBatchRequest;
+use hpq\pusher\igetui\utils\GTConfig;
 
 header("Content-Type: text/html; charset=utf-8");
 

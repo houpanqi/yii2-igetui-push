@@ -1,14 +1,14 @@
 <?php
-namespace common\components\pusher\igetui\template;
+namespace hpq\pusher\igetui\template;
 
-use common\components\pusher\igetui\DictionaryAlertMsg;
-use common\components\pusher\igetui\IGtAPNPayload;
-use common\components\pusher\igetui\PushInfo;
-use common\components\pusher\igetui\Transparent;
+use hpq\pusher\igetui\DictionaryAlertMsg;
+use hpq\pusher\igetui\IGtAPNPayload;
+use hpq\pusher\igetui\PushInfo;
+use hpq\pusher\igetui\Transparent;
 
 /**
  * Class IGtBaseTemplate
- * @package common\components\pusher\igetui\template
+ * @package hpq\pusher\igetui\template
  */
 class IGtBaseTemplate
 {

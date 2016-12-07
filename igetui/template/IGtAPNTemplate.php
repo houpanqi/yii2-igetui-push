@@ -1,8 +1,8 @@
 <?php
-namespace common\components\pusher\igetui\template;
+namespace hpq\pusher\igetui\template;
 /**
  * Class IGtAPNTemplate
- * @package common\components\pusher\igetui\template
+ * @package hpq\pusher\igetui\template
  */
 class IGtAPNTemplate extends IGtBaseTemplate
 {

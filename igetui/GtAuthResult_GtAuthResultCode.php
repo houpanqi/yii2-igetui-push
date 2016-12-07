@@ -5,9 +5,9 @@
  * Date: 2016/12/6 0006
  * Time: 20:01
  */
-namespace common\components\pusher\igetui;
+namespace hpq\pusher\igetui;
 
-use common\components\pusher\protobuf\type\PBEnum;
+use hpq\pusher\protobuf\type\PBEnum;
 
 class GtAuthResult_GtAuthResultCode extends PBEnum
 {

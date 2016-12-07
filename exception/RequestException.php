@@ -1,5 +1,5 @@
 <?php
-namespace common\components\pusher\igetui\exception;
+namespace hpq\pusher\igetui\exception;
 /**
  * Class RequestException
  * @property $requestId

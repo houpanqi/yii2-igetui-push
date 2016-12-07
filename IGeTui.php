@@ -1,12 +1,12 @@
 <?php
 
-namespace common\components\pusher;
-use common\components\pusher\igetui\IGtListMessage;
-use common\components\pusher\igetui\utils\ApiUrlRespectUtils;
-use common\components\pusher\igetui\utils\AppConditions;
-use common\components\pusher\igetui\utils\GTConfig;
-use common\components\pusher\igetui\utils\HttpManager;
-use common\components\pusher\igetui\utils\LangUtils;
+namespace hpq\pusher;
+use hpq\pusher\igetui\IGtListMessage;
+use hpq\pusher\igetui\utils\ApiUrlRespectUtils;
+use hpq\pusher\igetui\utils\AppConditions;
+use hpq\pusher\igetui\utils\GTConfig;
+use hpq\pusher\igetui\utils\HttpManager;
+use hpq\pusher\igetui\utils\LangUtils;
 
 
 /**
@@ -19,7 +19,7 @@ use common\components\pusher\igetui\utils\LangUtils;
  * @static  $appkeyUrlList
  * @property $domainUrlList
  * @property $useSSL
- * @package common\components\pusher\igetui\template
+ * @package hpq\pusher\igetui\template
  */
 class IGeTui
 {

@@ -5,9 +5,9 @@
  * Date: 2016/12/6 0006
  * Time: 20:07
  */
-namespace common\components\pusher\igetui;
+namespace hpq\pusher\igetui;
 
-use common\components\pusher\protobuf\PBMessage;
+use hpq\pusher\protobuf\PBMessage;
 
 class PushListResult extends PBMessage
 {
@@ -16,7 +16,7 @@ class PushListResult extends PBMessage
     public function __construct($reader = null)
     {
         parent::__construct($reader);
-        $this->fields["1"] = "\\common\\components\\pusher\\igetui\\PushResult";
+        $this->fields["1"] = "\\hpq\\pusher\\igetui\\PushResult";
         $this->values["1"] = array();
     }
 

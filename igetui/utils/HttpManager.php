@@ -1,6 +1,6 @@
 <?php
-namespace common\components\pusher\igetui\utils;
-use common\components\pusher\igetui\exception\RequestException;
+namespace hpq\pusher\igetui\utils;
+use hpq\pusher\igetui\exception\RequestException;
 
 require_once(dirname(__FILE__) . '/' . 'LogUtils.php');
 class HttpManager

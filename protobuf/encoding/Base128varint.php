@@ -1,8 +1,8 @@
 <?php
-namespace common\components\pusher\protobuf\encoding;
+namespace hpq\pusher\protobuf\encoding;
 /**
  * Class Base128varint
- * @package common\components\pusher\protobuf\encoding
+ * @package hpq\pusher\protobuf\encoding
  */
 class Base128varint
 {

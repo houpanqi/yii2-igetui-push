@@ -1,8 +1,8 @@
 <?php
-namespace common\components\pusher\igetui\template;
+namespace hpq\pusher\igetui\template;
 
-use common\components\pusher\igetui\ActionChain;
-use common\components\pusher\igetui\ActionChain_Type;
+use hpq\pusher\igetui\ActionChain;
+use hpq\pusher\igetui\ActionChain_Type;
 
 class IGtLinkTemplate extends IGtBaseTemplate
 {

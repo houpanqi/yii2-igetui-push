@@ -1,5 +1,5 @@
 <?php
-namespace common\components\pusher\igetui\utils;
+namespace hpq\pusher\igetui\utils;
 
 
  require_once(dirname(__FILE__) . '/' . 'HttpManager.php');

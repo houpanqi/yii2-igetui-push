@@ -1,14 +1,14 @@
 <?php
-namespace common\components\pusher\igetui\template;
+namespace hpq\pusher\igetui\template;
 
-use common\components\pusher\igetui\ActionChain;
-use common\components\pusher\igetui\ActionChain_Type;
-use common\components\pusher\igetui\AppStartUp;
-use common\components\pusher\igetui\Button;
+use hpq\pusher\igetui\ActionChain;
+use hpq\pusher\igetui\ActionChain_Type;
+use hpq\pusher\igetui\AppStartUp;
+use hpq\pusher\igetui\Button;
 
 /**
  * Class IGtNotyPopLoadTemplate
- * @package common\components\pusher\igetui\template
+ * @package hpq\pusher\igetui\template
  */
 class IGtNotyPopLoadTemplate extends IGtBaseTemplate
 {

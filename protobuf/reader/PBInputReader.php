@@ -1,6 +1,6 @@
 <?php
-namespace common\components\pusher\protobuf\reader;
-use common\components\pusher\protobuf\encoding\Base128varint;
+namespace hpq\pusher\protobuf\reader;
+use hpq\pusher\protobuf\encoding\Base128varint;
 
 /**
  * Abstract class for an input reader

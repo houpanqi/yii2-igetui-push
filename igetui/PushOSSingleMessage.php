@@ -5,9 +5,9 @@
  * Date: 2016/12/6 0006
  * Time: 20:11
  */
-namespace common\components\pusher\igetui;
+namespace hpq\pusher\igetui;
 
-use common\components\pusher\protobuf\PBMessage;
+use hpq\pusher\protobuf\PBMessage;
 
 class PushOSSingleMessage extends PBMessage
 {
@@ -16,11 +16,11 @@ class PushOSSingleMessage extends PBMessage
     public function __construct($reader = null)
     {
         parent::__construct($reader);
-        $this->fields["1"] = "\\common\\components\\pusher\\protobuf\\type\\PBString";
+        $this->fields["1"] = "\\hpq\\pusher\\protobuf\\type\\PBString";
         $this->values["1"] = "";
-        $this->fields["2"] = "\\common\\components\\pusher\\igetui\\OSMessage";
+        $this->fields["2"] = "\\hpq\\pusher\\igetui\\OSMessage";
         $this->values["2"] = "";
-        $this->fields["3"] = "\\common\\components\\pusher\\igetui\\Target";
+        $this->fields["3"] = "\\hpq\\pusher\\igetui\\Target";
         $this->values["3"] = "";
     }
 

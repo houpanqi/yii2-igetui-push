@@ -1,5 +1,5 @@
 <?php
-namespace common\components\pusher\igetui\utils;
+namespace hpq\pusher\igetui\utils;
 class GTConfig
 {
     public static function isPushSingleBatchAsync()

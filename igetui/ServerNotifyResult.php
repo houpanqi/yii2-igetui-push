@@ -5,9 +5,9 @@
  * Date: 2016/12/6 0006
  * Time: 20:17
  */
-namespace common\components\pusher\igetui;
+namespace hpq\pusher\igetui;
 
-use common\components\pusher\protobuf\PBMessage;
+use hpq\pusher\protobuf\PBMessage;
 
 class ServerNotifyResult extends PBMessage
 {
@@ -16,9 +16,9 @@ class ServerNotifyResult extends PBMessage
     public function __construct($reader = null)
     {
         parent::__construct($reader);
-        $this->fields["1"] = "\\common\\components\\pusher\\protobuf\\type\\PBString";
+        $this->fields["1"] = "\\hpq\\pusher\\protobuf\\type\\PBString";
         $this->values["1"] = "";
-        $this->fields["2"] = "\\common\\components\\pusher\\protobuf\\type\\PBString";
+        $this->fields["2"] = "\\hpq\\pusher\\protobuf\\type\\PBString";
         $this->values["2"] = "";
     }
 

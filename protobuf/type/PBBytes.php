@@ -1,11 +1,11 @@
 <?php
 
-namespace common\components\pusher\protobuf\type;
-use common\components\pusher\protobuf\PBMessage;
+namespace hpq\pusher\protobuf\type;
+use hpq\pusher\protobuf\PBMessage;
 
 /**
  * Class PBBytes
- * @package common\components\pusher\protobuf\type
+ * @package hpq\pusher\protobuf\type
  */
 class PBBytes extends PBScalar
 {

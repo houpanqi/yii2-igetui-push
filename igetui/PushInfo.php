@@ -5,9 +5,9 @@
  * Date: 2016/12/6 0006
  * Time: 20:09
  */
-namespace common\components\pusher\igetui;
+namespace hpq\pusher\igetui;
 
-use common\components\pusher\protobuf\PBMessage;
+use hpq\pusher\protobuf\PBMessage;
 
 class PushInfo extends PBMessage
 {
@@ -16,33 +16,33 @@ class PushInfo extends PBMessage
     public function __construct($reader = null)
     {
         parent::__construct($reader);
-        $this->fields["1"] = "\\common\\components\\pusher\\protobuf\\type\\PBString";
+        $this->fields["1"] = "\\hpq\\pusher\\protobuf\\type\\PBString";
         $this->values["1"] = "";
-        $this->fields["2"] = "\\common\\components\\pusher\\protobuf\\type\\PBString";
+        $this->fields["2"] = "\\hpq\\pusher\\protobuf\\type\\PBString";
         $this->values["2"] = "";
-        $this->fields["3"] = "\\common\\components\\pusher\\protobuf\\type\\PBString";
+        $this->fields["3"] = "\\hpq\\pusher\\protobuf\\type\\PBString";
         $this->values["3"] = "";
-        $this->fields["4"] = "\\common\\components\\pusher\\protobuf\\type\\PBString";
+        $this->fields["4"] = "\\hpq\\pusher\\protobuf\\type\\PBString";
         $this->values["4"] = "";
-        $this->fields["5"] = "\\common\\components\\pusher\\protobuf\\type\\PBString";
+        $this->fields["5"] = "\\hpq\\pusher\\protobuf\\type\\PBString";
         $this->values["5"] = "";
-        $this->fields["6"] = "\\common\\components\\pusher\\protobuf\\type\\PBString";
+        $this->fields["6"] = "\\hpq\\pusher\\protobuf\\type\\PBString";
         $this->values["6"] = "";
-        $this->fields["7"] = "\\common\\components\\pusher\\protobuf\\type\\PBString";
+        $this->fields["7"] = "\\hpq\\pusher\\protobuf\\type\\PBString";
         $this->values["7"] = "";
-        $this->fields["8"] = "\\common\\components\\pusher\\protobuf\\type\\PBString";
+        $this->fields["8"] = "\\hpq\\pusher\\protobuf\\type\\PBString";
         $this->values["8"] = "";
-        $this->fields["9"] = "\\common\\components\\pusher\\protobuf\\type\\PBString";
+        $this->fields["9"] = "\\hpq\\pusher\\protobuf\\type\\PBString";
         $this->values["9"] = "";
-        $this->fields["10"] = "\\common\\components\\pusher\\protobuf\\type\\PBInt";
+        $this->fields["10"] = "\\hpq\\pusher\\protobuf\\type\\PBInt";
         $this->values["10"] = "";
-        $this->fields["11"] = "\\common\\components\\pusher\\protobuf\\type\\PBBool";
+        $this->fields["11"] = "\\hpq\\pusher\\protobuf\\type\\PBBool";
         $this->values["11"] = "";
-        $this->fields["12"] = "\\common\\components\\pusher\\protobuf\\type\\PBString";
+        $this->fields["12"] = "\\hpq\\pusher\\protobuf\\type\\PBString";
         $this->values["12"] = "";
-        $this->fields["13"] = "\\common\\components\\pusher\\protobuf\\type\\PBBool";
+        $this->fields["13"] = "\\hpq\\pusher\\protobuf\\type\\PBBool";
         $this->values["13"] = "";
-        $this->fields["14"] = "\\common\\components\\pusher\\protobuf\\type\\PBString";
+        $this->fields["14"] = "\\hpq\\pusher\\protobuf\\type\\PBString";
         $this->values["14"] = "";
     }
 

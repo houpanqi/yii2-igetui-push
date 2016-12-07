@@ -2,8 +2,8 @@
 /**
  * @author Nikolai Kordulla
  */
-namespace common\components\pusher\protobuf\type;
-use common\components\pusher\protobuf\PBMessage;
+namespace hpq\pusher\protobuf\type;
+use hpq\pusher\protobuf\PBMessage;
 
 class PBEnum extends PBScalar
 {

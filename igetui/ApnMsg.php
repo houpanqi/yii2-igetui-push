@@ -1,8 +1,8 @@
 <?php
-namespace common\components\pusher\igetui;
+namespace hpq\pusher\igetui;
 /**
  * Interface ApnMsg
- * @package common\components\pusher\igetui
+ * @package hpq\pusher\igetui
  */
 interface ApnMsg
 {

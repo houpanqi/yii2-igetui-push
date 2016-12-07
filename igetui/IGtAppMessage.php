@@ -1,5 +1,5 @@
 <?php
-namespace common\components\pusher\igetui;
+namespace hpq\pusher\igetui;
 
 class IGtAppMessage extends IGtMessage{
 	

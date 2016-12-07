@@ -3,12 +3,12 @@
  * Including of all files needed to parse messages
  * @author Nikolai Kordulla
  */
-namespace common\components\pusher\protobuf;
+namespace hpq\pusher\protobuf;
 
-use common\components\pusher\protobuf\encoding\Base128varint;
-use common\components\pusher\protobuf\reader\PBInputStringReader;
-use common\components\pusher\protobuf\type\PBInt;
-use common\components\pusher\protobuf\type\PBString;
+use hpq\pusher\protobuf\encoding\Base128varint;
+use hpq\pusher\protobuf\reader\PBInputStringReader;
+use hpq\pusher\protobuf\type\PBInt;
+use hpq\pusher\protobuf\type\PBString;
 use yii\base\Object;
 
 

@@ -1,5 +1,5 @@
 <?php
-namespace common\components\pusher\protobuf\reader;
+namespace hpq\pusher\protobuf\reader;
 /**
  * Reads string input
  */

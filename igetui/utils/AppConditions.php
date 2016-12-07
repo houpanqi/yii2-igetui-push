@@ -1,5 +1,5 @@
 <?php
-namespace common\components\pusher\igetui\utils;
+namespace hpq\pusher\igetui\utils;
 class AppConditions
 {
     //手机类型

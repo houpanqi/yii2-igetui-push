@@ -1,15 +1,15 @@
 <?php
 
-namespace common\components\pusher;
+namespace hpq\pusher;
 
-use common\components\pusher\igetui\DictionaryAlertMsg;
-use common\components\pusher\igetui\exception\RequestException;
-use common\components\pusher\igetui\IGtAPNPayload;
-use common\components\pusher\igetui\IGtAppMessage;
-use common\components\pusher\igetui\IGtSingleMessage;
-use common\components\pusher\igetui\IGtTarget;
-use common\components\pusher\igetui\template\IGtNotyPopLoadTemplate;
-use common\components\pusher\igetui\template\IGtTransmissionTemplate;
+use hpq\pusher\igetui\DictionaryAlertMsg;
+use hpq\pusher\igetui\exception\RequestException;
+use hpq\pusher\igetui\IGtAPNPayload;
+use hpq\pusher\igetui\IGtAppMessage;
+use hpq\pusher\igetui\IGtSingleMessage;
+use hpq\pusher\igetui\IGtTarget;
+use hpq\pusher\igetui\template\IGtNotyPopLoadTemplate;
+use hpq\pusher\igetui\template\IGtTransmissionTemplate;
 use yii\base\Component;
 
 /**
@@ -20,7 +20,7 @@ use yii\base\Component;
  * @property string $host
  * @property object $template
  * @property string $clientId
- * @package common\components\pusher
+ * @package hpq\pusher
  */
 class Push extends Component
 {

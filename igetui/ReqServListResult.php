@@ -1,8 +1,8 @@
 <?php
 
-namespace common\components\pusher\igetui;
+namespace hpq\pusher\igetui;
 
-use common\components\pusher\protobuf\PBMessage;
+use hpq\pusher\protobuf\PBMessage;
 
 class ReqServListResult extends PBMessage
 {
@@ -11,11 +11,11 @@ class ReqServListResult extends PBMessage
     public function __construct($reader = null)
     {
         parent::__construct($reader);
-        $this->fields["1"] = "\\common\\components\\pusher\\protobuf\\type\\PBInt";
+        $this->fields["1"] = "\\hpq\\pusher\\protobuf\\type\\PBInt";
         $this->values["1"] = "";
-        $this->fields["2"] = "\\common\\components\\pusher\\protobuf\\type\\PBString";
+        $this->fields["2"] = "\\hpq\\pusher\\protobuf\\type\\PBString";
         $this->values["2"] = array();
-        $this->fields["3"] = "\\common\\components\\pusher\\protobuf\\type\\PBString";
+        $this->fields["3"] = "\\hpq\\pusher\\protobuf\\type\\PBString";
         $this->values["3"] = "";
     }
 

@@ -1,6 +1,6 @@
 <?php
-namespace common\components\pusher\igetui;
-use common\components\pusher\protobuf\type\PBEnum;
+namespace hpq\pusher\igetui;
+use hpq\pusher\protobuf\type\PBEnum;
 
 /**
  * Class CmdID

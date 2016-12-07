@@ -4,7 +4,7 @@
  * Class IGtAPNPayload
  * @property object $alertMsg
  */
-namespace common\components\pusher\igetui;
+namespace hpq\pusher\igetui;
 class IGtAPNPayload
 {
     var $APN_SOUND_SILENCE = "com.gexin.ios.silence";

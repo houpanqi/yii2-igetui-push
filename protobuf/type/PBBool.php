@@ -1,8 +1,8 @@
 <?php
 
-namespace common\components\pusher\protobuf\type;
+namespace hpq\pusher\protobuf\type;
 
-use common\components\pusher\protobuf\PBMessage;
+use hpq\pusher\protobuf\PBMessage;
 
 class PBBool extends PBInt
 {

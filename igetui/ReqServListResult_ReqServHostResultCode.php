@@ -6,9 +6,9 @@
  * Time: 20:03
  */
 
-namespace common\components\pusher\igetui;
+namespace hpq\pusher\igetui;
 
-use common\components\pusher\protobuf\type\PBEnum;
+use hpq\pusher\protobuf\type\PBEnum;
 
 class ReqServListResult_ReqServHostResultCode extends PBEnum
 {
