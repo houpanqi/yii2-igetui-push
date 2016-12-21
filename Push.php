@@ -1,5 +1,12 @@
 <?php
 
+/**
+ * Created by houpanqi
+ * Author: Hou Panqi <houpanqi@gmail.com>
+ * Date: 2016-12-21
+ * Time: 15:26
+ */
+
 namespace hpq\pusher;
 
 use hpq\pusher\igetui\DictionaryAlertMsg;
@@ -14,12 +21,6 @@ use yii\base\Component;
 
 /**
  * Class Push
- * @property string $appKey
- * @property string $appId
- * @property string $masterSecret
- * @property string $host
- * @property object $template
- * @property string $clientId
  * @package hpq\pusher
  */
 class Push extends Component
@@ -54,7 +55,11 @@ class Push extends Component
      */
     public $clientId;
 
-
+    /**
+     * Function:setClient 设置客户端ID
+     * @param $client
+     * @return $this
+     */
     public function setClient($client)
     {
         if (is_array($client)) {
