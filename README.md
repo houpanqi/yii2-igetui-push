@@ -15,7 +15,8 @@
     ]
 ```
 程序中使用
-----------    
+----------
+```php
     $pusher = Yii::$app->push;
     $config = [
         'title' => '测试',
@@ -28,7 +29,7 @@
  
     $clients = '2d75b427a6341f4b837a3d95e398ae75';
     $res = $pusher->setClient($clients)->useNotifyPopLoadTemplate($config)->pushOne(); //个推
-    
+```
     
 ### 开发者信息
 
