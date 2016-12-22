@@ -5,13 +5,15 @@
     composer require houpanqi/yii2-igetui-push "*"
     
 ### 配置
-    在main.php中配置
-
-    'class' => 'hpq\pusher\Push',
-    'appId' => '', //你的APPID
-    'appKey' => '', //你的APPKEY
-    'masterSecret' => '', //你的masterSecret
-    'host' => 'http://sdk.open.api.igexin.com/apiex.htm',
+```php
+    'push' => [
+        'class' => 'hpq\pusher\Push',
+        'appId' => '', //你的APPID
+        'appKey' => '', //你的APPKEY
+        'masterSecret' => '', //你的masterSecret
+        'host' => 'http://sdk.open.api.igexin.com/apiex.htm',
+    ]
+```
 程序中使用
 ----------    
     $pusher = Yii::$app->push;

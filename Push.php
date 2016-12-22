@@ -57,7 +57,7 @@ class Push extends Component
 
     /**
      * Function:setClient 设置客户端ID
-     * @param $client
+     * @param string $client 客户端ID
      * @return $this
      */
     public function setClient($client)
@@ -111,7 +111,12 @@ class Push extends Component
 
     /**
      * Function:useTransmissionTemplate 使用透传模板(可自定义)
-     * @param array $config
+     * @param array $config 配置项
+     * ```
+     *  $config  = [
+     *      'title','content','logo','popTitle','popContent','loadImage','loadTitle','downloadUrl','showStartAt','showEndAt'
+     * ]
+     * ```
      * @return $this
      */
     public function useTransmissionTemplate($config = [])
